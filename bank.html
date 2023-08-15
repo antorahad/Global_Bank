@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Bank Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav class="bg-[#91C8E4] w-[100%] h-[100px] px-[25px] flex items-center justify-between">
+            <div class="logo">
+                <span class="text-[white] text-[35px] font-bold">Global Bank</span>
+            </div>
+            <div>
+                <a href="index.html" class="bg-[crimson] text-[white] font-semibold px-[25px] py-[10px] rounded-lg" id="logout-btn">logout</a>
+            </div>
+        </nav>
+        <h1 class="text-center text-[60px] font-[700] text-gray-900 my-[50px]">Welcome To <span class="text-[#91C8E4]">Global Bank</span></h1>
+    </header>
+    <main class="container mx-auto my-[60px]">
+        <section class="flex items-center justify-center gap-[20px]">
+            <div class="bg-[orangered] w-[300px] text-center p-[20px] rounded-lg">
+                <h4 class="text-white font-semibold text-[35px]">Diposite</h4>
+                <h4 class="text-white font-semibold text-[25px]">$<span id="deposite-amount">00</span></h4>
+            </div>
+            <div class="bg-[purple] w-[300px] text-center p-[20px] rounded-lg">
+                <h4 class="text-white font-semibold text-[35px]">Withdraw</h4>
+                <h4 class="text-white font-semibold text-[25px]">$ <span id="withdraw-amount">00</span></h4>
+            </div>
+            <div class="bg-[crimson] w-[300px] text-center p-[20px] rounded-lg">
+                <h4 class="text-white font-semibold text-[35px]">Balance</h4>
+                <h4 class="text-white font-semibold text-[25px]">$<span id="balance">500</span></h4>
+            </div>
+        </section>
+        <section class="flex items-center justify-center gap-[20px] mt-[50px]">
+            <div class="bg-green-500 w-[30%] px-[20px] py-[15px] rounded-lg">
+                <h1 class="text-white text-[25px] font-[600] mb-[15px]">Please Deposite</h1>
+                <input class="w-[100%] py-[10px] px-[15px] rounded-md mx-auto" type="text" id="deposite" placeholder="Enter your deposite">
+                <button class="bg-gray-300 mt-[15px] text-black font-semibold px-[20px] py-[10px] rounded-lg" id="deposite-btn">Deposite</button>
+            </div>
+            <div class="bg-fuchsia-600 w-[30%] px-[20px] py-[15px] rounded-lg">
+                <h1 class="text-white text-[25px] font-[600] mb-[15px]">Please Withdraw</h1>
+                <input class="w-[100%] py-[10px] px-[15px] rounded-md mx-auto" type="text" id="withdraw" placeholder="Enter your withdraw">
+                <button class="bg-gray-300 mt-[15px] text-black font-semibold px-[20px] py-[10px] rounded-lg" id="withdraw-btn">Withdraw</button>
+            </div>
+        </section>
+    </main>
+    <script src="deposite.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
